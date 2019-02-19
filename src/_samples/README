@@ -1,0 +1,7 @@
+This is a sample collection of some arbitrary content.
+This could be anything, and could be used to generate
+pages itself, such as if one has company staff, and
+each has a page with information about them. Jekyll
+can also iterate over collections like this, allowing
+the meta data to be used in other pages, such as to
+generate a list of said staff.

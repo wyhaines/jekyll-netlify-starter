@@ -1,0 +1,41 @@
+# Site settings
+type: website
+title: Cyber Investing Summit 2019 - Cyber Investing Summit
+email: wyhaines@gmail.com
+description: >-
+  Cyber Investing Summit 2019 - Cyber Investing Summit
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://cyberinvestingsummit.com" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /:categories/:year/:month/:day/:slug:output_ext
+
+# SASS
+sass:
+  sass_dir: assets/_sass
+  style: compressed
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-include-with-frontmatter
+  - jekyll-twitter-plugin
+  - jekyll-picture-tag
+
+source: src/
+destination: new_doc
+
+include:
+  - _pages
+
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+      comments: false
+collections:
+  samples:
+    output: true

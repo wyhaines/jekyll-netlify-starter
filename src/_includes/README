@@ -1,0 +1,8 @@
+Headers, footers, and other reusable bits of layout go in here.
+
+This sample site is setup to use `includefm` instead of the jekyll
+built-in `include` because in order to use Netlify to edit files,
+the files need to be able to support having frontmatter. Netlify
+can't write files that don't have it. So, all of the sample includes
+have a small frontmatter section with just a `title`, which will be
+used by the CMS to show the name of the template.

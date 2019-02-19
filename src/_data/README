@@ -1,0 +1,3 @@
+Put any data into here that will be used when generating the site.
+This could be user information, or numerical information if generating
+charts and tables. Format is YAML.
