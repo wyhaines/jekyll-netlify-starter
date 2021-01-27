@@ -30,9 +30,9 @@ echo $$ > ${LOCKFILE}
 DOCDIR="${DIR}/doc"
 NETLIFYDIR="${DOCDIR}/admin"
 BASE="$( basename ${DIR} )"
-RVMDIR="/usr/share/rvm" # If not using RVM, replace as appropriate
-RUBYVERSION="2.6.1" # Replace this with whatever version you are using
-BUNDLER="${RVMDIR}/wrappers/ruby-${RUBYVERSION}/bundle"
+#RVMDIR="/usr/share/rvm" # If not using RVM, replace as appropriate
+RUBYVERSION="2.7.2" # Replace this with whatever version you are using
+BUNDLER="${rvm_path}/wrappers/ruby-${RUBYVERSION}/bundle"
 BRANCH=`( cd ${DIR} && git rev-parse --abbrev-ref HEAD )`
 JEKYLLCONFIG="_config-${BRANCH}.yml"
 DOC_KEEP_COUNT=4 # Actual files kept is one less than this.

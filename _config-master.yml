@@ -19,7 +19,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-include-with-frontmatter
-  - jekyll-twitter-plugin
+#  - jekyll-twitter-plugin
   - jekyll-picture-tag
 
 source: src/
